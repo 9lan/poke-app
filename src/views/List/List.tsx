@@ -60,7 +60,8 @@ export const List: React.FC = () => {
                 <>
                   <div id="name">{capitalizeFirstLetter(pokemon.name)}</div>
                   <div id="stock">
-                    {pokemon.history[pokemon.history.length - 1].stock} pcs
+                    {pokemon.history.reduce((a: any, b: any) => a + b.stock, 0)}{" "}
+                    pcs
                   </div>
                 </>
               </ListItems>
@@ -79,7 +80,8 @@ export const List: React.FC = () => {
                 <>
                   <div id="name">{capitalizeFirstLetter(pokemon.name)}</div>
                   <div id="stock">
-                    {pokemon.history[pokemon.history.length - 1].stock} pcs
+                    {pokemon.history.reduce((a: any, b: any) => a + b.stock, 0)}{" "}
+                    pcs
                   </div>
                 </>
               </ListItems>

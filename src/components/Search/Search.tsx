@@ -1,4 +1,4 @@
-import React, { HtmlHTMLAttributes } from "react";
+import React from "react";
 import { SearchContainer, SearchInput, SearchIcon } from "./styled";
 import Icon from "../../assets/icons/search.svg";
 

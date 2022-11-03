@@ -72,7 +72,8 @@ export const Detail: React.FC = () => {
         <DetailStok>
           <DetailStokTitle>Sisa stok</DetailStokTitle>
           <DetailStokInfo>
-            {newDt && newDt.history[newDt.history.length - 1].stock}
+            {newDt && newDt.history.reduce((a: any, b: any) => a + b.stock, 0)}{" "}
+            pcs
           </DetailStokInfo>
         </DetailStok>
         <DetailRiwayat>
